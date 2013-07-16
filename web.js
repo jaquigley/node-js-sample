@@ -5,7 +5,7 @@ var buff = fs.readFileSync('./web.js');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buff.toString();
+  response.send(buff.toString());
 });
 
 var port = process.env.PORT || 5000;
