@@ -1,6 +1,6 @@
 var express = require('express');
 var fs = require('fs');
-var buff = new Buffer(fs.readFileSync('./web.js'));
+var buff = fs.readFileSync('./web.js');
 
 var app = express.createServer(express.logger());
 
